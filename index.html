@@ -62,6 +62,85 @@
       <div class="outer">
         <section id="main">
   
+    <article id="post-css" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2019/05/15/css/" class="article-date">
+  <time datetime="2019-05-15T07:56:47.000Z" itemprop="datePublished">2019-05-15</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2019/05/15/css/">css</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>css的布局主要分成两类：左右布局和上下布局。</p>
+<p>布局的主要方式来自float和position。</p>
+<p>float（浮动）：</p>
+<ul>
+<li>left：将元素浮动到左侧。</li>
+<li>right：将元素浮动到右侧。</li>
+<li>none：不浮动。</li>
+<li>inherit：继承。</li>
+</ul>
+<p>position：</p>
+<ul>
+<li>relative（相对定位）：不脱离文档流的移动。</li>
+<li>absolute（绝对定位）：脱离文档流的移动。</li>
+</ul>
+<p>float与absolute脱离文档流的区别是：float会产生文字环绕效果，absolute则完全覆盖文字。</p>
+<p>float效果：<img src="//freelll.github.io/2019/05/15/css/1557908643159.jpg" alt></p>
+<p>绝对定位的效果：<img src="//freelll.github.io/2019/05/15/css/1557909164153.jpg" alt="1557909164153"></p>
+<p>可以看出字体被覆盖。</p>
+<p>块级元素并排的方法：</p>
+<p>在子元素上设置float，在父元素上设置. clearfix 消除浮动，设置子元素的width可以改变并排的布局。</p>
+<p>左右布局：</p>
+<p>左侧定宽，右侧自适应：</p>
+<ul>
+<li>float+margin</li>
+<li>absolute+margin</li>
+</ul>
+<p>左中右布局：</p>
+<ul>
+<li>左右两侧float，中间自适应。</li>
+<li>左右两侧absolute定位，中间自适应。</li>
+</ul>
+<p>水平居中的方法：</p>
+<ul>
+<li>行内元素：text-align：center(行内元素，其父元素是块级元素直接给父元素设置text-align：center)，其父元素不是块级元素则先将父元素变成块级元素再text-align：cener。</li>
+<li>块级元素：margin：0 auto（已设置width），未设置width的情况下且父元素是块级元素，将子元素display：inline-block，然后text-align：center。</li>
+</ul>
+<p>水平居中的方法：</p>
+<ul>
+<li>单行的行内元素：line-height=height即可。</li>
+<li>多行的行内元素：给父元素设置display：table-cell和vertical-align：middle。</li>
+<li>块级元素：父元素相对定位然后子元素绝对定位，设置子元素的top：50%。定高度的情况下可以</li>
+</ul>
+<p>直接设置transform：translateY（-50%）；不定高度的情况下课直接设置transform：translateY（-50%）。</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://freelll.github.io/2019/05/15/css/" data-id="cjvp0ffus0000qk9gli4dficn" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
     <article id="post-html标签" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2019/05/04/html标签/" class="article-date">
@@ -112,7 +191,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://freelll.github.io/2019/05/04/html标签/" data-id="cjv9i74yx0002k09g99e0cs84" class="article-share-link">Share</a>
+      <a data-url="https://freelll.github.io/2019/05/04/html标签/" data-id="cjvp0ffy10001qk9gb3wjvqxb" class="article-share-link">Share</a>
       
       
     </footer>
@@ -173,7 +252,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://freelll.github.io/2019/05/02/命令行相关/" data-id="cjv9i74yz0003k09g1kwgaix4" class="article-share-link">Share</a>
+      <a data-url="https://freelll.github.io/2019/05/02/命令行相关/" data-id="cjvp0ffye0003qk9gzcbbsnuh" class="article-share-link">Share</a>
       
       
     </footer>
@@ -213,7 +292,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://freelll.github.io/2019/05/02/HTTP相关/" data-id="cjv9i74yt0001k09gnq0vxp0h" class="article-share-link">Share</a>
+      <a data-url="https://freelll.github.io/2019/05/02/HTTP相关/" data-id="cjvp0ffya0002qk9g3b3cn4ah" class="article-share-link">Share</a>
       
       
     </footer>
@@ -250,7 +329,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://freelll.github.io/2019/05/01/开博大吉/" data-id="cjv9i74z00004k09gif8o8klu" class="article-share-link">Share</a>
+      <a data-url="https://freelll.github.io/2019/05/01/开博大吉/" data-id="cjvp0ffyg0004qk9g3a77hrij" class="article-share-link">Share</a>
       
       
     </footer>
@@ -295,7 +374,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://freelll.github.io/2019/05/01/hello-world/" data-id="cjv9i74ym0000k09g7b3fs5ac" class="article-share-link">Share</a>
+      <a data-url="https://freelll.github.io/2019/05/01/hello-world/" data-id="cjvp0ffyh0005qk9gcgwrl3n8" class="article-share-link">Share</a>
       
       
     </footer>
@@ -336,6 +415,10 @@
       <ul>
         
           <li>
+            <a href="/2019/05/15/css/">css</a>
+          </li>
+        
+          <li>
             <a href="/2019/05/04/html标签/">html标签</a>
           </li>
         
@@ -349,10 +432,6 @@
         
           <li>
             <a href="/2019/05/01/开博大吉/">开博大吉</a>
-          </li>
-        
-          <li>
-            <a href="/2019/05/01/hello-world/">Hello World</a>
           </li>
         
       </ul>
